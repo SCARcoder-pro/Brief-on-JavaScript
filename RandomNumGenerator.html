@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Generate random numbers using a while loop</title>
+</head>
+
+<body>
+    <h2>Generate random numbers using a while loop</h2>
+    <p id="number"></p>
+    <script>
+        var text = "";
+        var i = 0;
+        while (i < 10) {
+            var randomNumber = Math.floor(Math.random() * 100);
+            text += "<br> The random number is " + randomNumber;
+            i++;
+        }
+        document.getElementById("number").innerHTML = text;
+    </script>
+</body>
+
+</html>
